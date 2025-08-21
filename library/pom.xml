@@ -151,7 +151,7 @@
                         <fail>${platform.check.fail-enforcer}</fail>
                         <failFast>false</failFast>
                         <rules>
-                            <requirePluginVersions />
+                            <requirePluginVersions/>
                             <bannedDependencies>
                                 <excludes>
                                     <!-- clashes with commons-logging:commons-logging -->
@@ -194,8 +194,8 @@
                                     <include>junit:junit:[4.11,)</include>
                                 </includes>
                             </bannedDependencies>
-                            <banDuplicatePomDependencyVersions />
-                            <requireUpperBoundDeps />
+                            <banDuplicatePomDependencyVersions/>
+                            <requireUpperBoundDeps/>
                             <requireMavenVersion>
                                 <version>3.2.3</version>
                             </requireMavenVersion>
@@ -729,7 +729,7 @@
             <dependency>
                 <groupId>com.proofpoint.platform</groupId>
                 <artifactId>http-client</artifactId>
-                <version>3.26-SNAPSHOT</version>
+                <version>3.27</version>
             </dependency>
 
             <dependency>
@@ -1592,7 +1592,7 @@
                                 <mapping>
                                     <directory>/opt/proofpoint/${project.artifactId}/lib</directory>
                                     <directoryIncluded>true</directoryIncluded>
-                                    <dependency />
+                                    <dependency/>
                                     <!-- Manually include the JAR containing the application code -->
                                     <sources>
                                         <source>
